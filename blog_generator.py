@@ -17,10 +17,10 @@ def generate_blog(paragraph_topic):
   retrieve_blog = response.choices[0].text
   return retrieve_blog
 
-print(generate_blog('How to make a blog with openAI'))
+#print(generate_blog('How to make a blog with openAI'))
 
 # Multiple Paragraphs
-'''
+
 keep_writing = True # let user choose when to stop writing paragraphs
 
 while keep_writing:
@@ -29,4 +29,4 @@ while keep_writing:
     paragraph_topic = input('What should this paragraph talk about? ')
     print(generate_blog(paragraph_topic))
   else:
-    keep_writing = False '''
+    keep_writing = False
